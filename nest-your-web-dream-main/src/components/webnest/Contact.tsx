@@ -2,7 +2,7 @@ import { useState, type FormEvent } from "react";
 import { Phone, Mail, Instagram, Send } from "lucide-react";
 import logo from "@/assets/logo/webnest-48.png";
 
-const PHONE = "6238478283";
+const PHONE = "9562829885";
 const EMAIL = "webnest417@gmail.com";
 const INSTA = "webnest_studioo";
 

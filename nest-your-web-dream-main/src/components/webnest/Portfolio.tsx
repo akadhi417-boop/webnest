@@ -67,7 +67,7 @@ export function Portfolio() {
                 <h3 className="text-xl font-bold text-foreground">{p.title}</h3>
                 <p className="mt-2 text-sm text-foreground/70">{p.desc}</p>
                 <a
-                  href="https://wa.me/916238478283?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
+                  href="https://wa.me/919562829885?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
                   target="_blank"
                   rel="noreferrer"
                   className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-smooth hover:gap-3"

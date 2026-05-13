@@ -15,7 +15,7 @@ export function Footer() {
               grow online. Premium quality, every time.
             </p>
             <a
-              href="https://wa.me/916238478283?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
+              href="https://wa.me/919562829885?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
               target="_blank"
               rel="noreferrer"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-smooth hover:-translate-y-0.5"
@@ -53,9 +53,9 @@ export function Footer() {
             </h4>
             <ul className="mt-5 space-y-3 text-sm">
               <li>
-                <a href="tel:6238478283" className="flex items-center gap-2 text-white/60 hover:text-primary transition-colors">
+                <a href="tel:9562829885" className="flex items-center gap-2 text-white/60 hover:text-primary transition-colors">
                   <Phone size={14} />
-                  <span>+91 62384 78283</span>
+                  <span>+91 95628 29885</span>
                 </a>
               </li>
               <li>

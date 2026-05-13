@@ -10,6 +10,10 @@ import { nitro } from "nitro/vite";
 export default defineConfig({
   cloudflare: false, // Disable Cloudflare adapter for Vercel
   vite: {
-    plugins: [nitro()],
+    plugins: [
+      nitro({
+        preset: "vercel",
+      }),
+    ],
   },
 });
