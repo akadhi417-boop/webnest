@@ -63,6 +63,7 @@
   --color-surface: var(--surface);
   --color-surface-foreground: var(--surface-foreground);
   --color-ink: var(--ink);
+  --color-whatsapp: #25D366;
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -222,6 +223,15 @@
     100% { box-shadow: 0 0 0 0 oklch(0.7 0.2 45 / 0); }
   }
   .animate-pulse-ring { animation: pulse-ring 2.5s ease-out infinite; }
+
+  /* WhatsApp specific pulse */
+  @keyframes whatsapp-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  }
+  .animate-whatsapp-pulse { animation: whatsapp-pulse 2s infinite; }
+
 
   /* Shimmer / shine sweep */
   @keyframes shimmer {

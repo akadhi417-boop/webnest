@@ -47,7 +47,9 @@ export function Navbar() {
         </ul>
 
         <a
-          href="#contact"
+          href="https://wa.me/916238478283?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
+          target="_blank"
+          rel="noreferrer"
           className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-soft transition-smooth hover:shadow-glow hover:-translate-y-0.5 md:inline-flex"
         >
           Let's Talk
@@ -77,7 +79,9 @@ export function Navbar() {
               </li>
             ))}
             <a
-              href="#contact"
+              href="https://wa.me/916238478283?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-semibold text-primary-foreground"
             >

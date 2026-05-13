@@ -7,7 +7,6 @@ import { WhyChoose } from "@/components/webnest/WhyChoose";
 import { Process } from "@/components/webnest/Process";
 import { Contact } from "@/components/webnest/Contact";
 import { Footer } from "@/components/webnest/Footer";
-import { WhatsAppFloat } from "@/components/webnest/WhatsAppFloat";
 import { CustomCursor } from "@/components/webnest/CustomCursor";
 import { ScrollProgress } from "@/components/webnest/ScrollProgress";
 import { LoadingScreen } from "@/components/webnest/LoadingScreen";
@@ -49,7 +48,6 @@ function Index() {
         <Process />
         <Contact />
         <Footer />
-        <WhatsAppFloat />
       </main>
     </>
   );

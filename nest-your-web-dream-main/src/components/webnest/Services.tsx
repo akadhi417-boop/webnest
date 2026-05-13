@@ -1,4 +1,4 @@
-import { Code2, Palette, ShoppingBag, Wrench, ArrowUpRight } from "lucide-react";
+import { Code2, Palette, ShoppingBag, Wrench, ArrowUpRight, Megaphone, MapPin } from "lucide-react";
 
 const services = [
   {
@@ -17,11 +17,23 @@ const services = [
     desc: "Powerful online stores that scale with your business and drive sales.",
   },
   {
+    icon: Megaphone,
+    title: "Social Media Marketing",
+    desc: "Grow your brand with strategic campaigns, engaging content, and performance-driven marketing across all platforms.",
+  },
+  {
+    icon: MapPin,
+    title: "Google Business & Local SEO",
+    desc: "Dominate local search and Google Maps with optimized business profiles and targeted SEO strategies.",
+  },
+  {
     icon: Wrench,
     title: "Website Maintenance",
     desc: "Keep your site secure, updated, and performing at its peak — 24/7.",
   },
 ];
+
+
 
 export function Services() {
   return (
@@ -40,7 +52,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 stagger">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 stagger">
           {services.map((s, i) => (
             <div
               key={s.title}
