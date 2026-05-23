@@ -5,6 +5,7 @@ import { BrandLogo } from "@/components/webnest/BrandLogo";
 const links = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
+  { href: "#mobile-app", label: "Mobile Apps" },
   { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },
 ];
@@ -38,9 +39,14 @@ export function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+                className="relative text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
               >
                 {l.label}
+                {l.href === "#mobile-app" && (
+                  <span className="absolute -top-2.5 -right-4 px-1 py-0.2 text-[8px] font-bold text-white bg-primary rounded-full scale-90 animate-pulse">
+                    NEW
+                  </span>
+                )}
               </a>
             </li>
           ))}
@@ -72,9 +78,14 @@ export function Navbar() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-surface"
+                  className="flex justify-between items-center rounded-lg px-3 py-2.5 text-sm font-medium text-foreground hover:bg-surface"
                 >
-                  {l.label}
+                  <span>{l.label}</span>
+                  {l.href === "#mobile-app" && (
+                    <span className="px-1.5 py-0.5 text-[8px] font-bold text-white bg-primary rounded-full scale-90 animate-pulse">
+                      NEW
+                    </span>
+                  )}
                 </a>
               </li>
             ))}

@@ -3,6 +3,8 @@ import { Navbar } from "@/components/webnest/Navbar";
 import { Hero } from "@/components/webnest/Hero";
 import { About } from "@/components/webnest/About";
 import { Services } from "@/components/webnest/Services";
+import { MobileAppDev } from "@/components/webnest/MobileAppDev";
+import { Portfolio } from "@/components/webnest/Portfolio";
 import { WhyChoose } from "@/components/webnest/WhyChoose";
 import { Process } from "@/components/webnest/Process";
 import { Contact } from "@/components/webnest/Contact";
@@ -44,6 +46,8 @@ function Index() {
         <Hero />
         <About />
         <Services />
+        <MobileAppDev />
+        <Portfolio />
         <WhyChoose />
         <Process />
         <Contact />
