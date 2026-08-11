@@ -41,7 +41,7 @@ function Index() {
       <LoadingScreen />
       <CustomCursor />
       <ScrollProgress />
-      <main className="min-h-screen bg-background text-foreground cursor-none animate-page-enter">
+      <main className="min-h-screen bg-background text-foreground animate-page-enter">
         <Navbar />
         <Hero />
         <About />

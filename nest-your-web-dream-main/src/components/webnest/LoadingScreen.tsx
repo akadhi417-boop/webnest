@@ -6,19 +6,27 @@ export function LoadingScreen() {
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
+    // Check if user already saw the loading screen in this session
+    const hasSeenIntro = sessionStorage.getItem("webnest_intro_seen");
+    if (hasSeenIntro) {
+      setIsVisible(false);
+      return;
+    }
+
     // Prevent scrolling while loading screen is active
     document.body.style.overflow = "hidden";
 
-    // Show loading screen for 2.2 seconds, then fade out
+    // Show loading screen for 800ms, then fade out smoothly
     const fadeOutTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 2200);
+    }, 850);
 
     // Completely remove from DOM after fade out completes
     const removeTimer = setTimeout(() => {
       setIsVisible(false);
+      sessionStorage.setItem("webnest_intro_seen", "true");
       document.body.style.overflow = "";
-    }, 2800);
+    }, 1250);
 
     return () => {
       clearTimeout(fadeOutTimer);
