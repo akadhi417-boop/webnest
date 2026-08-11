@@ -94,7 +94,7 @@ export function Navbar() {
 
       {/* Mobile Navigation Drawer */}
       {open && (
-        <div className="fixed inset-x-0 top-[61px] bottom-0 z-40 bg-background/98 backdrop-blur-xl border-t border-border flex flex-col justify-between overflow-y-auto px-6 py-6 md:hidden animate-page-enter">
+        <div className="fixed inset-x-0 top-[60px] h-[calc(100dvh-60px)] z-50 bg-background border-t border-border flex flex-col justify-between overflow-y-auto px-5 py-6 md:hidden animate-page-enter">
           <ul className="flex flex-col gap-2">
             {links.map((l) => (
               <li key={l.href}>
