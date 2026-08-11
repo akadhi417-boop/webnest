@@ -21,17 +21,20 @@ export function WhatsAppFloat() {
             target="_blank"
             rel="noreferrer"
             aria-label="Chat with WebNest on WhatsApp"
-            className="group fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-whatsapp px-4 py-3 text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-whatsapp-pulse animate-page-enter animate-whatsapp-pulse sm:px-5 sm:py-3.5"
+            className="group fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 rounded-full bg-whatsapp px-3.5 py-3 text-white shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 animate-whatsapp-pulse sm:px-5 sm:py-3.5"
+            style={{
+              marginBottom: "env(safe-area-inset-bottom, 0px)",
+            }}
           >
-            <span className="relative grid h-7 w-7 place-items-center">
-              <MessageCircle size={24} className="relative" />
+            <span className="relative grid h-6 w-6 sm:h-7 sm:w-7 place-items-center">
+              <MessageCircle size={22} className="relative sm:w-6 sm:h-6" />
             </span>
-            <span className="hidden text-sm font-bold tracking-wide sm:inline">
+            <span className="text-xs sm:text-sm font-bold tracking-wide">
               Chat with us
             </span>
           </a>
         </TooltipTrigger>
-        <TooltipContent side="left" className="bg-whatsapp text-white font-semibold">
+        <TooltipContent side="left" className="bg-whatsapp text-white font-semibold hidden sm:block">
           <p>Chat with us</p>
         </TooltipContent>
       </Tooltip>

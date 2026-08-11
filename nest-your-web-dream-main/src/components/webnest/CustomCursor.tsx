@@ -6,8 +6,17 @@ export function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
   const [isClicking, setIsClicking] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
+  const [isTouch, setIsTouch] = useState(true);
 
   useEffect(() => {
+    // Only activate custom cursor on devices with fine pointer (mouse/trackpad)
+    const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+    if (!mediaQuery.matches) {
+      setIsTouch(true);
+      return;
+    }
+    setIsTouch(false);
+
     const dot = dotRef.current;
     const ring = ringRef.current;
     if (!dot || !ring) return;
@@ -72,6 +81,8 @@ export function CustomCursor() {
       mo.disconnect();
     };
   }, []);
+
+  if (isTouch) return null;
 
   return (
     <>

@@ -4,7 +4,7 @@ import logo from "@/assets/logo/webnest-48.png";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+    <section id="top" className="relative overflow-hidden pt-28 pb-14 sm:pt-36 sm:pb-20 md:pt-40 md:pb-28">
       {/* Decorative glow */}
       <div
         aria-hidden
@@ -21,28 +21,28 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 dots-bg opacity-60"
       />
 
-      {/* Decorative spinning ring */}
+      {/* Decorative spinning ring (desktop only to save mobile battery) */}
       <div
         aria-hidden
-        className="pointer-events-none absolute right-[8%] top-[10%] h-64 w-64 rounded-full border border-primary/20 animate-spin-slow"
+        className="pointer-events-none absolute right-[8%] top-[10%] hidden h-64 w-64 rounded-full border border-primary/20 animate-spin-slow lg:block"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute right-[8%] top-[10%] h-64 w-64 rounded-full border border-dashed border-primary/10"
+        className="pointer-events-none absolute right-[8%] top-[10%] hidden h-64 w-64 rounded-full border border-dashed border-primary/10 lg:block"
       />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-10 sm:gap-12 px-4 sm:px-6 lg:grid-cols-2">
         {/* Left: text */}
         <div className="reveal">
-          <span className="animate-bounce-subtle inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-4 py-1.5 text-xs font-medium text-foreground/80 backdrop-blur">
-            <Sparkles size={14} className="text-primary" />
-            Premium Web Development Studio
+          <span className="animate-bounce-subtle inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-3.5 py-1.5 text-xs font-medium text-foreground/80 backdrop-blur">
+            <Sparkles size={13} className="text-primary" />
+            Premium Web &amp; App Studio
           </span>
 
-          <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground md:text-6xl lg:text-[72px]">
+          <h1 className="mt-5 sm:mt-6 text-3xl sm:text-4xl md:text-6xl lg:text-[72px] font-extrabold leading-[1.1] tracking-tight text-foreground">
             <span className="animate-word animate-word-1 inline-block">We</span>{" "}
             <span className="animate-word animate-word-2 inline-block">Build</span>{" "}
-            <span className="animate-word animate-word-3 inline-block">Websites</span>
+            <span className="animate-word animate-word-3 inline-block">Digital Products</span>
             <br />
             That{" "}
             <span className="relative inline-block animate-shimmer animate-word animate-word-4">
@@ -59,17 +59,17 @@ export function Hero() {
             Your Business
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground/70 animate-word animate-word-4" style={{ animationDelay: "0.45s" }}>
-            WebNest creates fast, modern, and scalable digital solutions for
+          <p className="mt-5 sm:mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-foreground/70 animate-word animate-word-4" style={{ animationDelay: "0.45s" }}>
+            WebNest creates fast, modern, and scalable websites &amp; mobile applications for
             startups and businesses ready to dominate their market.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <a
               href="https://wa.me/919562829885?text=Hi%20WebNest%2C%20I%27m%20interested%20in%20your%20services."
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-glow transition-smooth hover:-translate-y-0.5 animate-pulse-ring"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-glow transition-smooth hover:-translate-y-0.5 animate-pulse-ring"
             >
               <span className="grid h-6 w-6 place-items-center rounded-full bg-white/95 p-0.5 shadow-sm">
                 <img src={logo} alt="" aria-hidden className="h-full w-full object-contain" />
@@ -79,7 +79,7 @@ export function Hero() {
             </a>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 rounded-full border-2 border-foreground/15 bg-transparent px-7 py-3.5 text-sm font-semibold text-foreground transition-smooth hover:border-foreground hover:bg-foreground hover:text-background"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-foreground/15 bg-transparent px-7 py-3.5 text-sm font-semibold text-foreground transition-smooth hover:border-foreground hover:bg-foreground hover:text-background"
             >
               Our Services
             </a>
@@ -87,9 +87,9 @@ export function Hero() {
         </div>
 
         {/* Right: hero image with float animation */}
-        <div className="reveal relative animate-float">
-          <div className="absolute -inset-6 rounded-[2rem] bg-gradient-accent opacity-20 blur-2xl" />
-          <div className="relative overflow-hidden rounded-3xl border border-border bg-surface shadow-card">
+        <div className="reveal relative animate-float mt-2 lg:mt-0">
+          <div className="absolute -inset-4 sm:-inset-6 rounded-[2rem] bg-gradient-accent opacity-20 blur-2xl" />
+          <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-border bg-surface shadow-card">
             <img
               src={heroImg}
               alt="WebNest creative web development showcase"
@@ -99,14 +99,14 @@ export function Hero() {
             />
           </div>
           {/* Lightning Fast badge */}
-          <div className="animate-slide-up absolute -bottom-6 -left-6 rounded-2xl border border-border bg-background px-5 py-4 shadow-card">
-            <div className="flex items-center gap-3">
-              <div className="animate-pulse-ring grid h-10 w-10 place-items-center rounded-full bg-primary/10 text-primary">
+          <div className="animate-slide-up absolute -bottom-3 -left-2 sm:-bottom-6 sm:-left-6 rounded-2xl border border-border bg-background/95 backdrop-blur-md px-3.5 py-2.5 sm:px-5 sm:py-4 shadow-card">
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <div className="animate-pulse-ring grid h-8 w-8 sm:h-10 sm:w-10 place-items-center rounded-full bg-primary/10 text-primary text-sm sm:text-base">
                 ⚡
               </div>
               <div>
-                <div className="text-sm font-semibold text-foreground">Lightning Fast</div>
-                <div className="text-xs text-foreground/60">Avg load &lt; 1.2s</div>
+                <div className="text-xs sm:text-sm font-bold text-foreground">Lightning Fast</div>
+                <div className="text-[10px] sm:text-xs text-foreground/60">Avg load &lt; 1.2s</div>
               </div>
             </div>
           </div>
