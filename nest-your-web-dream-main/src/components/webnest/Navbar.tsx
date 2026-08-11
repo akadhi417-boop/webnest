@@ -6,6 +6,7 @@ const links = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
   { href: "#mobile-app", label: "Mobile Apps" },
+  { href: "#portfolio", label: "Our Works" },
   { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },
 ];

@@ -15,23 +15,23 @@ import { LoadingScreen } from "@/components/webnest/LoadingScreen";
 import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
-  component: Index,
   head: () => ({
     meta: [
-      { title: "WebNest — Premium Web Development Agency" },
+      { title: "WebNest — Premium Web & App Development Studio" },
       {
         name: "description",
         content:
-          "WebNest builds fast, modern, scalable websites for startups and businesses. Web development, UI/UX, e-commerce and maintenance.",
+          "WebNest builds fast, modern, scalable websites and mobile apps for startups and businesses. Web development, mobile app development, UI/UX, and IT solutions.",
       },
-      { property: "og:title", content: "WebNest — Premium Web Development Agency" },
+      { property: "og:title", content: "WebNest — Premium Web & App Development Studio" },
       {
         property: "og:description",
         content:
-          "We build websites that grow your business. Modern, fast, scalable digital solutions.",
+          "We build websites and mobile apps that grow your business. Modern, fast, scalable digital solutions.",
       },
     ],
   }),
+  component: Index,
 });
 
 function Index() {

@@ -32,6 +32,8 @@ export function Footer() {
               {[
                 ["#about", "About"],
                 ["#services", "Services"],
+                ["#mobile-app", "Mobile Apps"],
+                ["#portfolio", "Our Works"],
                 ["#process", "Process"],
                 ["#contact", "Contact"],
               ].map(([href, label]) => (
